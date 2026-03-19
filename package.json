@@ -3,7 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "demo":"npx playwright test test/demo/mytest.spec.ts",
+     "login":"npx playwright test test/functional/login.spec.ts --headed"
+     
+  },
+  
   "keywords": [],
   "author": "",
   "license": "ISC",
