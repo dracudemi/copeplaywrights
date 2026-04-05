@@ -18,6 +18,7 @@
     "demologin": "npx playwright test test/functional/login.spec.ts",
     "MakeAppoint": "npx playwright test test/functional/make-appoint.spec.ts --headed",
     "separate": "npx playwright test --config=config/test.playwright.config.ts test/functional/make-appoint.spec.ts",
+    "multiWindow": "npx playwright test test/demo/multi.window.spec.ts --headed",
     "Inventory": "npx playwright test test/functional/inventory.spec.ts --headed",
     "params": "npx playwright test test/demo/params-make-appoint.spec.ts",
     "Tag": "npx playwright test --grep @Smoke --headed"
