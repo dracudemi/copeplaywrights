@@ -14,5 +14,11 @@
         "InternalServerError": 500,
         "validationError": 422
 
-    }
+    },
+    
+        "REQ_ENDPOINTS":{
+         "GET_USERS": "/users?page=2",
+            "POST_USERS": "/users"  
+        }
+    
 }

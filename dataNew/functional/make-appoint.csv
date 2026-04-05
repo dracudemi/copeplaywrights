@@ -1,0 +1,4 @@
+testId,facility,applyForReadmission,healthcareProgram,visitDate,comment
+TC001,"Tokyo CURA Healthcare Center",true,Medicare,2024-07-30,"This is a comment for TC001"
+TC002,"Tokyo CURA Healthcare Center",true,Medicare,2024-09-30,"This is a comment for TC002"
+TC003,"Tokyo CURA Healthcare Center",true,Medicare,2024-08-30,"This is a comment for TC003"

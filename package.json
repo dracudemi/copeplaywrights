@@ -4,16 +4,35 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "demo":"npx playwright test test/demo/mytest.spec.ts",
-     "login":"npx playwright test test/functional/login.spec.ts --headed"
-     
+    "demo": "npx playwright test test/demo/mytest.spec.ts",
+    "api": "npx playwright test test/api/users.api.spec.ts",
+    "e2e": "npx playwright test test/e2e/noncommerce-e2e.spec.ts --headed",
+    "debugcli": "PWDEBUG=1 npx playwright test test/demo/debug.spec.ts",
+    "trace": "npx playwright test test/demo/debug.spec.ts --trace on",
+    "screenshot": "npx playwright test test/functional/make-appoint.spec.ts --headed",
+    "cap": "DEBUG=pw:api npx playwright test test/demo/advanceCapabalities.spec.ts --headed",
+    "debug": "npx playwright test test/demo/debug.spec.ts --headed",
+    "debugui": "npx playwright test test/demo/debug.spec.ts --ui --headed",
+    "login": "npx playwright test test/functional/login.spec.ts --headed",
+    "constants": "npx playwright test test/demo/mytest.spec.ts",
+    "demologin": "npx playwright test test/functional/login.spec.ts",
+    "MakeAppoint": "npx playwright test test/functional/make-appoint.spec.ts --headed",
+    "separate": "npx playwright test --config=config/test.playwright.config.ts test/functional/make-appoint.spec.ts",
+    "Inventory": "npx playwright test test/functional/inventory.spec.ts --headed",
+    "params": "npx playwright test test/demo/params-make-appoint.spec.ts",
+    "Tag": "npx playwright test --grep @Smoke --headed"
   },
-  
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@playwright/test": "^1.58.2",
-    "@types/node": "^25.3.5"
+    "@types/node": "^25.3.5",
+    "allure-playwright": "^3.6.0",
+    "dotenv": "^17.3.1"
+  },
+  "dependencies": {
+    "chalk": "^5.6.2",
+    "csv-parse": "^6.2.1"
   }
 }
